@@ -48,7 +48,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        
+        gap: 8px;
+        max-width: calc(100%-50px);
+        overflow: hidden;
     }
     .logo i{
         height: 40px;
@@ -61,8 +63,7 @@
         align-items: center;
     }
     .logo h2{
-        font-size: clamp(18px, 4vw, 30px);
-        white-space: normal;
+        font-size: clamp(28px, 5vw, 40px);
         font-weight: 700;
         font-family: cursive;
         color: #1f2937;
@@ -70,6 +71,9 @@
         text-overflow: ellipsis;
         padding-right: 10px;
         cursor: default;
+        white-space: nowrap;
+        min-width: 0;
+        flex-shrink: 1;
     }
     .navbar{
         display: flex;
@@ -114,6 +118,7 @@
         display: none;
         font-size: 24px;
         cursor: pointer;
+        flex-shrink: 0;
     }
     @media (max-width: 768px) {
          .navbar{
@@ -1110,12 +1115,6 @@
         text-align: center;
         color: #9ca3af;
     }
-    h2{
-        font-size: clamp(22px, 4vw, 36px);
-    }
-    p{
-        font-size: clamp(14px, 2.5vw, 18px);
-    }
    </style>
    <script>
         function toggleMenu() {
@@ -1478,6 +1477,7 @@
 
 </body>
 </html>
+
 
 
 
